@@ -1,0 +1,266 @@
+{
+    "0000": [
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np\nimport arcticfox ",
+            "Existing": "import pandas as pd\nimport numpy as np\nimport arcticfox "
+        }
+    ],
+    "243905889805976513": [
+        {
+            "PreviouslyGenerated": "arcticfox.projectpath('trex_analysis.py') ",
+            "Existing": "arcticfox.projectpath('trex_analysis.py') "
+        }
+    ],
+    "013905889805976513": [
+        {
+            "PreviouslyGenerated": "trex_profilesDf = pd.read_csv('trex_profiles.csv') ",
+            "Existing": "trex_profilesDf = pd.read_csv('trex_profiles.csv') "
+        }
+    ],
+    "243905252309326513": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "013905252309326513": [
+        {
+            "PreviouslyGenerated": "print(trex_profilesDf.astype(str).fillna('').head()) #)1 ",
+            "Existing": "print(trex_profilesDf.astype(str).fillna('').head()) #)1 "
+        }
+    ],
+    "013905155282966513": [
+        {
+            "PreviouslyGenerated": "#***RowCount: Counts the number of rows in the dataframe. This kit can count the rows within a dataframe as follows:\n#***- Count the number of total rows\n#***- Count the rows grouped by a column\n#***- Count the rows where a value appears\n#***- Count the rows that match a criteria\n#***- Count the rows with missing data\n#***- Count the rows without missing data\n#***\n#***Would you like to:\n#***- Count the total number of rows? #> `select\n#***- Count the total number of rows where a value occurs? #> `select --values ?\n#***- Count the number of rows where a column has the same value? #> `select --group ?\n#***- Count the number of rows with missing values? #> `select --missing\n#***- Count the number of rows without missing values? #> `select --notMissing\n#***- Count the number of rows matching a criteria?  #> `select --where ?",
+            "Existing": "#***RowCount: Counts the number of rows in the dataframe. This kit can count the rows within a dataframe as follows:\n#***- Count the number of total rows\n#***- Count the rows grouped by a column\n#***- Count the rows where a value appears\n#***- Count the rows that match a criteria\n#***- Count the rows with missing data\n#***- Count the rows without missing data\n#***\n#***Would you like to:\n#***- Count the total number of rows? #> `select\n#***- Count the total number of rows where a value occurs? #> `select --values ?\n#***- Count the number of rows where a column has the same value? #> `select --group ?\n#***- Count the number of rows with missing values? #> `select --missing\n#***- Count the number of rows without missing values? #> `select --notMissing\n#***- Count the number of rows matching a criteria?  #> `select --where ?"
+        },
+        {
+            "PreviouslyGenerated": "trex_profilesDfRowCount = trex_profilesDf.shape[0] ",
+            "Existing": "trex_profilesDfRowCount = trex_profilesDf.shape[0] "
+        },
+        {
+            "PreviouslyGenerated": "trex_profilesDfRowCount = trex_profilesDf.shape[0]\nprint(trex_profilesDfRowCount) #)3 ",
+            "Existing": "trex_profilesDfRowCount = trex_profilesDf.shape[0]\nprint(trex_profilesDfRowCount) #)3 "
+        }
+    ],
+    "013905940181396513": [
+        {
+            "PreviouslyGenerated": "#***ColumnUnique: Gets a list of the unique values that appear in a column. This reveals what categories or values are in a column, if there are values that you did not expect to appear, and if there are values that are improperly formatted. While it can be used with numeric, categorical, date, etc. datatypes, it is less useful for columns with a large number of different values.\n#***\n#***Which of the following would you like to do?\n#***- Get the unique values of one or more columns #> `select --columns ?\n#***- Get the unique words, separated by a space, of one or more columns a #> `select --columns ? --separatedBySpace\n#***- Get the number of unique values in each columns? #> `select",
+            "Existing": "#***ColumnUnique: Gets a list of the unique values that appear in a column. This reveals what categories or values are in a column, if there are values that you did not expect to appear, and if there are values that are improperly formatted. While it can be used with numeric, categorical, date, etc. datatypes, it is less useful for columns with a large number of different values.\n#***\n#***Which of the following would you like to do?\n#***- Get the unique values of one or more columns #> `select --columns ?\n#***- Get the unique words, separated by a space, of one or more columns a #> `select --columns ? --separatedBySpace\n#***- Get the number of unique values in each columns? #> `select"
+        },
+        {
+            "PreviouslyGenerated": "#***How do you set columns? Change --columns ? to a list of one or more columns.\n#***- Single Column Example: --columns Speed\n#***- Multiple Column Example: --columns Speed Acceleration Distance ",
+            "Existing": "#***How do you set columns? Change --columns ? to a list of one or more columns.\n#***- Single Column Example: --columns Speed\n#***- Multiple Column Example: --columns Speed Acceleration Distance "
+        },
+        {
+            "PreviouslyGenerated": "trex_profilesDfUnique = trex_profilesDf['name'].unique() ",
+            "Existing": "trex_profilesDfUnique = trex_profilesDf['name'].unique() "
+        }
+    ],
+    "013905919939846513": [
+        {
+            "PreviouslyGenerated": "print(len(trex_profilesDfUnique)) #)4 ",
+            "Existing": "print(len(trex_profilesDfUnique)) #)4 "
+        }
+    ],
+    "013905910850806513": [
+        {
+            "PreviouslyGenerated": "#ISSUE: Can't find trex_analysis.csv in the Arctic Fox project. Arctic Fox searched all sub-directories of the project. Please make sure trex_analysis.csv is inside the project directories. ",
+            "Existing": "#ISSUE: Can't find trex_analysis.csv in the Arctic Fox project. Arctic Fox searched all sub-directories of the project. Please make sure trex_analysis.csv is inside the project directories. "
+        },
+        {
+            "PreviouslyGenerated": "#***Data: Reads from a csv or xlsx file and stores the result in a dataframe. This is commonly the first step done in a data processing pipeline. For an xlsx file, you can specify which sheet to load as a dataframe.\n#***\n#***Would you like to analyze a csv or xlsx file?\n#***- csv file #> `select --name ?\n#***- xlsx file #> `select --name ? --sheet ?",
+            "Existing": "#***Data: Reads from a csv or xlsx file and stores the result in a dataframe. This is commonly the first step done in a data processing pipeline. For an xlsx file, you can specify which sheet to load as a dataframe.\n#***\n#***Would you like to analyze a csv or xlsx file?\n#***- csv file #> `select --name ?\n#***- xlsx file #> `select --name ? --sheet ?"
+        },
+        {
+            "PreviouslyGenerated": "feeding_eventsDf = pd.read_csv('feeding_events.csv')\nfeeding_eventsDf['event_date'] = pd.to_datetime(feeding_eventsDf['event_date']) ",
+            "Existing": "feeding_eventsDf = pd.read_csv('feeding_events.csv')\nfeeding_eventsDf['event_date'] = pd.to_datetime(feeding_eventsDf['event_date']) "
+        }
+    ],
+    "013905904340876513": [
+        {
+            "PreviouslyGenerated": "print(trex_profilesDf.astype(str).fillna('').head()) #)3 ",
+            "Existing": "print(trex_profilesDf.astype(str).fillna('').head()) #)3 "
+        },
+        {
+            "PreviouslyGenerated": "print(feeding_eventsDf.astype(str).fillna('').head()) #)3 ",
+            "Existing": "print(feeding_eventsDf.astype(str).fillna('').head()) #)3 "
+        }
+    ],
+    "013905199474446513": [
+        {
+            "PreviouslyGenerated": "trex_profilesDf.drop(columns='event_id', inplace=True) ",
+            "Existing": "trex_profilesDf.drop(columns='event_id', inplace=True) "
+        },
+        {
+            "PreviouslyGenerated": "feeding_eventsDf.drop(columns='event_id', inplace=True) ",
+            "Existing": "feeding_eventsDf.drop(columns='event_id', inplace=True) "
+        }
+    ],
+    "013905225667196513": [
+        {
+            "PreviouslyGenerated": "#***DataframeSave: Saves the current columns and data within a dataframe to either a csv or xlsx file. This is useful for when you have finished processing and analyzing data and are ready to save it, save checkpoints along the process of cleaning data, and debugging to see the entire values within a dataframe.\n#***\n#***DataframeSave saves a dataframe to a csv file. Which of the following would you like to do?\n#***- Use the dataframe's name for the csv file? #> `select\n#***- Specify the file name? #> `select --fileName ?",
+            "Existing": "#***DataframeSave: Saves the current columns and data within a dataframe to either a csv or xlsx file. This is useful for when you have finished processing and analyzing data and are ready to save it, save checkpoints along the process of cleaning data, and debugging to see the entire values within a dataframe.\n#***\n#***DataframeSave saves a dataframe to a csv file. Which of the following would you like to do?\n#***- Use the dataframe's name for the csv file? #> `select\n#***- Specify the file name? #> `select --fileName ?"
+        },
+        {
+            "PreviouslyGenerated": "#***How do you set --fileName? Change --fileName ? to the desired name of the csv.\n#***- Example: --fileName MyData ",
+            "Existing": "#***How do you set --fileName? Change --fileName ? to the desired name of the csv.\n#***- Example: --fileName MyData "
+        },
+        {
+            "PreviouslyGenerated": "feeding_eventsDf.to_csv('feeding_events.csv', index=False) ",
+            "Existing": "feeding_eventsDf.to_csv('feeding_events.csv', index=False) "
+        }
+    ],
+    "013905960896216513": [
+        {
+            "PreviouslyGenerated": "#***Join: Joins two dataframes together based on the similarity of values in a single column in each dataframe, called the column being joined on. Most often, the column being joined on is a type of unique identifier that connects the rows from different data frames. For example, although likely too generic to be an identifier, you may join to dataframes on the column address. One table might be owner, and the other business name, and the two dataframes could be joined on address to connect the owners with the business names at an address.\n#***\n#***What would you like to do?\n#***- Join the two most recently used dataframes on the same column name? #> `select ? --column ?\n#***- Join the two most recently used dataframes on different column names? #> `select ? --leftColumn ? --rightColumn ?\n#***- Join by specifying the tables and use the same column name? #> `select ? --leftTable ? --rightTable ? --column ?\n#***- Join by specifying the tables and use different column names? #> `select ? --leftTable ? --rightTable ? --leftColumn ? --rightColumn ?\n#***- Join the previous pivots on the same column? #> `select --column ? --pivots",
+            "Existing": "#***Join: Joins two dataframes together based on the similarity of values in a single column in each dataframe, called the column being joined on. Most often, the column being joined on is a type of unique identifier that connects the rows from different data frames. For example, although likely too generic to be an identifier, you may join to dataframes on the column address. One table might be owner, and the other business name, and the two dataframes could be joined on address to connect the owners with the business names at an address.\n#***\n#***What would you like to do?\n#***- Join the two most recently used dataframes on the same column name? #> `select ? --column ?\n#***- Join the two most recently used dataframes on different column names? #> `select ? --leftColumn ? --rightColumn ?\n#***- Join by specifying the tables and use the same column name? #> `select ? --leftTable ? --rightTable ? --column ?\n#***- Join by specifying the tables and use different column names? #> `select ? --leftTable ? --rightTable ? --leftColumn ? --rightColumn ?\n#***- Join the previous pivots on the same column? #> `select --column ? --pivots"
+        },
+        {
+            "PreviouslyGenerated": "#***Would you like to specify the join type? If so, select the join type, or select Done.\n#***- Left join? #> `select --join left\n#***- Right join? #> `select --join right\n#***- Inner join? #> `select --join inner\n#***- Outer join? #> `select --join outer\n#***- Done (default)? #> `select\n#***\n#****** --column ? ***\n#***How do you set --column? Change --column ? to the column that will be used in both tables for the join. If you want to use different columns from each table, use --leftColumn ? and --rightColumn ? instead.\n#***- Example: --column schoolId ",
+            "Existing": "#***Would you like to specify the join type? If so, select the join type, or select Done.\n#***- Left join? #> `select --join left\n#***- Right join? #> `select --join right\n#***- Inner join? #> `select --join inner\n#***- Outer join? #> `select --join outer\n#***- Done (default)? #> `select\n#***\n#****** --column ? ***\n#***How do you set --column? Change --column ? to the column that will be used in both tables for the join. If you want to use different columns from each table, use --leftColumn ? and --rightColumn ? instead.\n#***- Example: --column schoolId "
+        }
+    ],
+    "013905983729496513": [
+        {
+            "PreviouslyGenerated": "feeding_eventsDf.drop(columns='event_id', inplace=True) ",
+            "Existing": "feeding_eventsDf.drop(columns='event_id', inplace=True) "
+        }
+    ],
+    "013905452222096513": [
+        {
+            "PreviouslyGenerated": "#***Join: Joins two dataframes together based on the similarity of values in a single column in each dataframe, called the column being joined on. Most often, the column being joined on is a type of unique identifier that connects the rows from different data frames. For example, although likely too generic to be an identifier, you may join to dataframes on the column address. One table might be owner, and the other business name, and the two dataframes could be joined on address to connect the owners with the business names at an address.\n#***\n#***What would you like to do?\n#***- Join the two most recently used dataframes on the same column name? #> `select ? --column ?\n#***- Join the two most recently used dataframes on different column names? #> `select ? --leftColumn ? --rightColumn ?\n#***- Join by specifying the tables and use the same column name? #> `select ? --leftTable ? --rightTable ? --column ?\n#***- Join by specifying the tables and use different column names? #> `select ? --leftTable ? --rightTable ? --leftColumn ? --rightColumn ?\n#***- Join the previous pivots on the same column? #> `select --column ? --pivots",
+            "Existing": "#***Join: Joins two dataframes together based on the similarity of values in a single column in each dataframe, called the column being joined on. Most often, the column being joined on is a type of unique identifier that connects the rows from different data frames. For example, although likely too generic to be an identifier, you may join to dataframes on the column address. One table might be owner, and the other business name, and the two dataframes could be joined on address to connect the owners with the business names at an address.\n#***\n#***What would you like to do?\n#***- Join the two most recently used dataframes on the same column name? #> `select ? --column ?\n#***- Join the two most recently used dataframes on different column names? #> `select ? --leftColumn ? --rightColumn ?\n#***- Join by specifying the tables and use the same column name? #> `select ? --leftTable ? --rightTable ? --column ?\n#***- Join by specifying the tables and use different column names? #> `select ? --leftTable ? --rightTable ? --leftColumn ? --rightColumn ?\n#***- Join the previous pivots on the same column? #> `select --column ? --pivots"
+        },
+        {
+            "PreviouslyGenerated": "#***Would you like to specify the join type? If so, select the join type, or select Done.\n#***- Left join? #> `select --join left\n#***- Right join? #> `select --join right\n#***- Inner join? #> `select --join inner\n#***- Outer join? #> `select --join outer\n#***- Done (default)? #> `select\n#***\n#****** --column ? ***\n#***How do you set --column? Change --column ? to the column that will be used in both tables for the join. If you want to use different columns from each table, use --leftColumn ? and --rightColumn ? instead.\n#***- Example: --column schoolId ",
+            "Existing": "#***Would you like to specify the join type? If so, select the join type, or select Done.\n#***- Left join? #> `select --join left\n#***- Right join? #> `select --join right\n#***- Inner join? #> `select --join inner\n#***- Outer join? #> `select --join outer\n#***- Done (default)? #> `select\n#***\n#****** --column ? ***\n#***How do you set --column? Change --column ? to the column that will be used in both tables for the join. If you want to use different columns from each table, use --leftColumn ? and --rightColumn ? instead.\n#***- Example: --column schoolId "
+        }
+    ],
+    "013905582935936513": [
+        {
+            "PreviouslyGenerated": "#***DataframeSave: Saves the current columns and data within a dataframe to either a csv or xlsx file. This is useful for when you have finished processing and analyzing data and are ready to save it, save checkpoints along the process of cleaning data, and debugging to see the entire values within a dataframe.\n#***\n#***DataframeSave saves a dataframe to a csv file. Which of the following would you like to do?\n#***- Use the dataframe's name for the csv file? #> `select\n#***- Specify the file name? #> `select --fileName ?",
+            "Existing": "#***DataframeSave: Saves the current columns and data within a dataframe to either a csv or xlsx file. This is useful for when you have finished processing and analyzing data and are ready to save it, save checkpoints along the process of cleaning data, and debugging to see the entire values within a dataframe.\n#***\n#***DataframeSave saves a dataframe to a csv file. Which of the following would you like to do?\n#***- Use the dataframe's name for the csv file? #> `select\n#***- Specify the file name? #> `select --fileName ?"
+        },
+        {
+            "PreviouslyGenerated": "feeding_eventsDf.to_csv('feeding_events.csv', index=False) ",
+            "Existing": "feeding_eventsDf.to_csv('feeding_events.csv', index=False) "
+        }
+    ],
+    "013905764793186513": [
+        {
+            "PreviouslyGenerated": "#***ColumnRemove: The ColumnRemove kit writes code that will remove one or more columns from a table / dataframe. The columns can be identified by a column name or column index. Additionally, ColumnRemove can be used to remove all non-numeric columns or remove columns from a starting column through the end of the dataframe.\n#***\n#***Which of the following would you like to do?\n#***- Remove all non-numeric columns? #> `select --nonNumeric\n#***- Remove one or more columns? #> `select --columns ?\n#***- Remove columns starting at an index through the rest of the dataframe? #> `select --columns ? --throughLastColumn",
+            "Existing": "#***ColumnRemove: The ColumnRemove kit writes code that will remove one or more columns from a table / dataframe. The columns can be identified by a column name or column index. Additionally, ColumnRemove can be used to remove all non-numeric columns or remove columns from a starting column through the end of the dataframe.\n#***\n#***Which of the following would you like to do?\n#***- Remove all non-numeric columns? #> `select --nonNumeric\n#***- Remove one or more columns? #> `select --columns ?\n#***- Remove columns starting at an index through the rest of the dataframe? #> `select --columns ? --throughLastColumn"
+        },
+        {
+            "PreviouslyGenerated": "feeding_eventsDf.drop(columns='event_if', inplace=True) ",
+            "Existing": "feeding_eventsDf.drop(columns='event_if', inplace=True) "
+        },
+        {
+            "PreviouslyGenerated": "feeding_eventsDf.drop(columns='event_id', inplace=True) ",
+            "Existing": "feeding_eventsDf.drop(columns='event_id', inplace=True) "
+        }
+    ],
+    "013905434317796513": [
+        {
+            "PreviouslyGenerated": "#***Join: Joins two dataframes together based on the similarity of values in a single column in each dataframe, called the column being joined on. Most often, the column being joined on is a type of unique identifier that connects the rows from different data frames. For example, although likely too generic to be an identifier, you may join to dataframes on the column address. One table might be owner, and the other business name, and the two dataframes could be joined on address to connect the owners with the business names at an address.\n#***\n#***What would you like to do?\n#***- Join the two most recently used dataframes on the same column name? #> `select ? --column ?\n#***- Join the two most recently used dataframes on different column names? #> `select ? --leftColumn ? --rightColumn ?\n#***- Join by specifying the tables and use the same column name? #> `select ? --leftTable ? --rightTable ? --column ?\n#***- Join by specifying the tables and use different column names? #> `select ? --leftTable ? --rightTable ? --leftColumn ? --rightColumn ?\n#***- Join the previous pivots on the same column? #> `select --column ? --pivots",
+            "Existing": "#***Join: Joins two dataframes together based on the similarity of values in a single column in each dataframe, called the column being joined on. Most often, the column being joined on is a type of unique identifier that connects the rows from different data frames. For example, although likely too generic to be an identifier, you may join to dataframes on the column address. One table might be owner, and the other business name, and the two dataframes could be joined on address to connect the owners with the business names at an address.\n#***\n#***What would you like to do?\n#***- Join the two most recently used dataframes on the same column name? #> `select ? --column ?\n#***- Join the two most recently used dataframes on different column names? #> `select ? --leftColumn ? --rightColumn ?\n#***- Join by specifying the tables and use the same column name? #> `select ? --leftTable ? --rightTable ? --column ?\n#***- Join by specifying the tables and use different column names? #> `select ? --leftTable ? --rightTable ? --leftColumn ? --rightColumn ?\n#***- Join the previous pivots on the same column? #> `select --column ? --pivots"
+        },
+        {
+            "PreviouslyGenerated": "#***Would you like to specify the join type? If so, select the join type, or select Done.\n#***- Left join? #> `select --join left\n#***- Right join? #> `select --join right\n#***- Inner join? #> `select --join inner\n#***- Outer join? #> `select --join outer\n#***- Done (default)? #> `select\n#***\n#****** --column ? ***\n#***How do you set --column? Change --column ? to the column that will be used in both tables for the join. If you want to use different columns from each table, use --leftColumn ? and --rightColumn ? instead.\n#***- Example: --column schoolId ",
+            "Existing": "#***Would you like to specify the join type? If so, select the join type, or select Done.\n#***- Left join? #> `select --join left\n#***- Right join? #> `select --join right\n#***- Inner join? #> `select --join inner\n#***- Outer join? #> `select --join outer\n#***- Done (default)? #> `select\n#***\n#****** --column ? ***\n#***How do you set --column? Change --column ? to the column that will be used in both tables for the join. If you want to use different columns from each table, use --leftColumn ? and --rightColumn ? instead.\n#***- Example: --column schoolId "
+        },
+        {
+            "PreviouslyGenerated": "#****** --column ? ***\n#***How do you set --column? Change --column ? to the column that will be used in both tables for the join. If you want to use different columns from each table, use --leftColumn ? and --rightColumn ? instead.\n#***- Example: --column schoolId ",
+            "Existing": "#****** --column ? ***\n#***How do you set --column? Change --column ? to the column that will be used in both tables for the join. If you want to use different columns from each table, use --leftColumn ? and --rightColumn ? instead.\n#***- Example: --column schoolId "
+        }
+    ],
+    "013905432820426513": [
+        {
+            "PreviouslyGenerated": "feeding_eventsDf.drop(columns='event_id', inplace=True) ",
+            "Existing": "feeding_eventsDf.drop(columns='event_id', inplace=True) "
+        }
+    ],
+    "013905934954796513": [
+        {
+            "PreviouslyGenerated": "#***Join: Joins two dataframes together based on the similarity of values in a single column in each dataframe, called the column being joined on. Most often, the column being joined on is a type of unique identifier that connects the rows from different data frames. For example, although likely too generic to be an identifier, you may join to dataframes on the column address. One table might be owner, and the other business name, and the two dataframes could be joined on address to connect the owners with the business names at an address.\n#***\n#***What would you like to do?\n#***- Join the two most recently used dataframes on the same column name? #> `select ? --column ?\n#***- Join the two most recently used dataframes on different column names? #> `select ? --leftColumn ? --rightColumn ?\n#***- Join by specifying the tables and use the same column name? #> `select ? --leftTable ? --rightTable ? --column ?\n#***- Join by specifying the tables and use different column names? #> `select ? --leftTable ? --rightTable ? --leftColumn ? --rightColumn ?\n#***- Join the previous pivots on the same column? #> `select --column ? --pivots",
+            "Existing": "#***Join: Joins two dataframes together based on the similarity of values in a single column in each dataframe, called the column being joined on. Most often, the column being joined on is a type of unique identifier that connects the rows from different data frames. For example, although likely too generic to be an identifier, you may join to dataframes on the column address. One table might be owner, and the other business name, and the two dataframes could be joined on address to connect the owners with the business names at an address.\n#***\n#***What would you like to do?\n#***- Join the two most recently used dataframes on the same column name? #> `select ? --column ?\n#***- Join the two most recently used dataframes on different column names? #> `select ? --leftColumn ? --rightColumn ?\n#***- Join by specifying the tables and use the same column name? #> `select ? --leftTable ? --rightTable ? --column ?\n#***- Join by specifying the tables and use different column names? #> `select ? --leftTable ? --rightTable ? --leftColumn ? --rightColumn ?\n#***- Join the previous pivots on the same column? #> `select --column ? --pivots"
+        },
+        {
+            "PreviouslyGenerated": "#***Would you like to specify the join type? If so, select the join type, or select Done.\n#***- Left join? #> `select --join left\n#***- Right join? #> `select --join right\n#***- Inner join? #> `select --join inner\n#***- Outer join? #> `select --join outer\n#***- Done (default)? #> `select\n#***\n#****** --column ? ***\n#***How do you set --column? Change --column ? to the column that will be used in both tables for the join. If you want to use different columns from each table, use --leftColumn ? and --rightColumn ? instead.\n#***- Example: --column schoolId ",
+            "Existing": "#***Would you like to specify the join type? If so, select the join type, or select Done.\n#***- Left join? #> `select --join left\n#***- Right join? #> `select --join right\n#***- Inner join? #> `select --join inner\n#***- Outer join? #> `select --join outer\n#***- Done (default)? #> `select\n#***\n#****** --column ? ***\n#***How do you set --column? Change --column ? to the column that will be used in both tables for the join. If you want to use different columns from each table, use --leftColumn ? and --rightColumn ? instead.\n#***- Example: --column schoolId "
+        }
+    ],
+    "013905339626266513": [
+        {
+            "PreviouslyGenerated": "#***Join: Joins two dataframes together based on the similarity of values in a single column in each dataframe, called the column being joined on. Most often, the column being joined on is a type of unique identifier that connects the rows from different data frames. For example, although likely too generic to be an identifier, you may join to dataframes on the column address. One table might be owner, and the other business name, and the two dataframes could be joined on address to connect the owners with the business names at an address.\n#***\n#***What would you like to do?\n#***- Join the two most recently used dataframes on the same column name? #> `select ? --column ?\n#***- Join the two most recently used dataframes on different column names? #> `select ? --leftColumn ? --rightColumn ?\n#***- Join by specifying the tables and use the same column name? #> `select ? --leftTable ? --rightTable ? --column ?\n#***- Join by specifying the tables and use different column names? #> `select ? --leftTable ? --rightTable ? --leftColumn ? --rightColumn ?\n#***- Join the previous pivots on the same column? #> `select --column ? --pivots",
+            "Existing": "#***Join: Joins two dataframes together based on the similarity of values in a single column in each dataframe, called the column being joined on. Most often, the column being joined on is a type of unique identifier that connects the rows from different data frames. For example, although likely too generic to be an identifier, you may join to dataframes on the column address. One table might be owner, and the other business name, and the two dataframes could be joined on address to connect the owners with the business names at an address.\n#***\n#***What would you like to do?\n#***- Join the two most recently used dataframes on the same column name? #> `select ? --column ?\n#***- Join the two most recently used dataframes on different column names? #> `select ? --leftColumn ? --rightColumn ?\n#***- Join by specifying the tables and use the same column name? #> `select ? --leftTable ? --rightTable ? --column ?\n#***- Join by specifying the tables and use different column names? #> `select ? --leftTable ? --rightTable ? --leftColumn ? --rightColumn ?\n#***- Join the previous pivots on the same column? #> `select --column ? --pivots"
+        },
+        {
+            "PreviouslyGenerated": "#***Would you like to specify the join type? If so, select the join type, or select Done.\n#***- Left join? #> `select --join left\n#***- Right join? #> `select --join right\n#***- Inner join? #> `select --join inner\n#***- Outer join? #> `select --join outer\n#***- Done (default)? #> `select\n#***\n#****** --leftColumn ? ***\n#***How do you set --leftColumn? Change --leftColumn ? to the column that will be used for the left table in the join. If you want to use the same column in each table, use --column ? instead.\n#***- Example: --leftColumn pk_schoolId\n#***\n#****** --rightColumn ? ***\n#***How do you set --rightColumn? Change --rightColumn ? to the column that will be used for the right table in the join. If you want to use the same column in each table, use --column ? instead.\n#***- Example: --rightColumn fk_schoolId ",
+            "Existing": "#***Would you like to specify the join type? If so, select the join type, or select Done.\n#***- Left join? #> `select --join left\n#***- Right join? #> `select --join right\n#***- Inner join? #> `select --join inner\n#***- Outer join? #> `select --join outer\n#***- Done (default)? #> `select\n#***\n#****** --leftColumn ? ***\n#***How do you set --leftColumn? Change --leftColumn ? to the column that will be used for the left table in the join. If you want to use the same column in each table, use --column ? instead.\n#***- Example: --leftColumn pk_schoolId\n#***\n#****** --rightColumn ? ***\n#***How do you set --rightColumn? Change --rightColumn ? to the column that will be used for the right table in the join. If you want to use the same column in each table, use --column ? instead.\n#***- Example: --rightColumn fk_schoolId "
+        }
+    ],
+    "013905921315326513": [
+        {
+            "PreviouslyGenerated": "#***Join: Joins two dataframes together based on the similarity of values in a single column in each dataframe, called the column being joined on. Most often, the column being joined on is a type of unique identifier that connects the rows from different data frames. For example, although likely too generic to be an identifier, you may join to dataframes on the column address. One table might be owner, and the other business name, and the two dataframes could be joined on address to connect the owners with the business names at an address.\n#***\n#***What would you like to do?\n#***- Join the two most recently used dataframes on the same column name? #> `select ? --column ?\n#***- Join the two most recently used dataframes on different column names? #> `select ? --leftColumn ? --rightColumn ?\n#***- Join by specifying the tables and use the same column name? #> `select ? --leftTable ? --rightTable ? --column ?\n#***- Join by specifying the tables and use different column names? #> `select ? --leftTable ? --rightTable ? --leftColumn ? --rightColumn ?\n#***- Join the previous pivots on the same column? #> `select --column ? --pivots",
+            "Existing": "#***Join: Joins two dataframes together based on the similarity of values in a single column in each dataframe, called the column being joined on. Most often, the column being joined on is a type of unique identifier that connects the rows from different data frames. For example, although likely too generic to be an identifier, you may join to dataframes on the column address. One table might be owner, and the other business name, and the two dataframes could be joined on address to connect the owners with the business names at an address.\n#***\n#***What would you like to do?\n#***- Join the two most recently used dataframes on the same column name? #> `select ? --column ?\n#***- Join the two most recently used dataframes on different column names? #> `select ? --leftColumn ? --rightColumn ?\n#***- Join by specifying the tables and use the same column name? #> `select ? --leftTable ? --rightTable ? --column ?\n#***- Join by specifying the tables and use different column names? #> `select ? --leftTable ? --rightTable ? --leftColumn ? --rightColumn ?\n#***- Join the previous pivots on the same column? #> `select --column ? --pivots"
+        },
+        {
+            "PreviouslyGenerated": "#***Would you like to specify the join type? If so, select the join type, or select Done.\n#***- Left join? #> `select --join left\n#***- Right join? #> `select --join right\n#***- Inner join? #> `select --join inner\n#***- Outer join? #> `select --join outer\n#***- Done (default)? #> `select\n#***\n#****** --column ? ***\n#***How do you set --column? Change --column ? to the column that will be used in both tables for the join. If you want to use different columns from each table, use --leftColumn ? and --rightColumn ? instead.\n#***- Example: --column schoolId ",
+            "Existing": "#***Would you like to specify the join type? If so, select the join type, or select Done.\n#***- Left join? #> `select --join left\n#***- Right join? #> `select --join right\n#***- Inner join? #> `select --join inner\n#***- Outer join? #> `select --join outer\n#***- Done (default)? #> `select\n#***\n#****** --column ? ***\n#***How do you set --column? Change --column ? to the column that will be used in both tables for the join. If you want to use different columns from each table, use --leftColumn ? and --rightColumn ? instead.\n#***- Example: --column schoolId "
+        },
+        {
+            "PreviouslyGenerated": "#****** --column ? ***\n#***How do you set --column? Change --column ? to the column that will be used in both tables for the join. If you want to use different columns from each table, use --leftColumn ? and --rightColumn ? instead.\n#***- Example: --column schoolId ",
+            "Existing": "#****** --column ? ***\n#***How do you set --column? Change --column ? to the column that will be used in both tables for the join. If you want to use different columns from each table, use --leftColumn ? and --rightColumn ? instead.\n#***- Example: --column schoolId "
+        },
+        {
+            "PreviouslyGenerated": "# selected left  table: trex_profilesDf\n# selected right table: feeding_eventsDf\ntrex_profilesDfFeeding_eventsDfJoin = pd.merge(trex_profilesDf, feeding_eventsDf, on=['name'], how='left') ",
+            "Existing": "# selected left  table: trex_profilesDf\n# selected right table: feeding_eventsDf\ntrex_profilesDfFeeding_eventsDfJoin = pd.merge(trex_profilesDf, feeding_eventsDf, on=['name'], how='left') "
+        }
+    ],
+    "013905495797146513": [
+        {
+            "PreviouslyGenerated": "print(trex_profilesDfFeeding_eventsDfJoin.astype(str).fillna('').head()) #)5 ",
+            "Existing": "print(trex_profilesDfFeeding_eventsDfJoin.astype(str).fillna('').head()) #)5 "
+        },
+        {
+            "PreviouslyGenerated": "print(trex_profilesDfFeeding_eventsDfJoinPivot.astype(str).fillna('').head()) #)5 ",
+            "Existing": "print(trex_profilesDfFeeding_eventsDfJoinPivot.astype(str).fillna('').head()) #)5 "
+        }
+    ],
+    "013905978680566513": [
+        {
+            "PreviouslyGenerated": "# No column found in some part of the condition\n# Please italicize columns names\n# Highlight the column name and press alt + i\n# Or select columns from the options below\n\n#***- Use success as column? #> ` select <i> success\n#***- Use True as column? #> ` select <i> True\n\ntrex_profilesDfFeeding_eventsDfJoin = trex_profilesDfFeeding_eventsDfJoin['success' == True] ",
+            "Existing": "# No column found in some part of the condition\n# Please italicize columns names\n# Highlight the column name and press alt + i\n# Or select columns from the options below\n\n#***- Use success as column? #> ` select <i> success\n#***- Use True as column? #> ` select <i> True\n\ntrex_profilesDfFeeding_eventsDfJoin = trex_profilesDfFeeding_eventsDfJoin['success' == True] "
+        },
+        {
+            "PreviouslyGenerated": "trex_profilesDfFeeding_eventsDfJoin = trex_profilesDfFeeding_eventsDfJoin[trex_profilesDfFeeding_eventsDfJoin['success'] == True] ",
+            "Existing": "trex_profilesDfFeeding_eventsDfJoin = trex_profilesDfFeeding_eventsDfJoin[trex_profilesDfFeeding_eventsDfJoin['success'] == True] "
+        }
+    ],
+    "013905351675246513": [
+        {
+            "PreviouslyGenerated": "trex_profilesDfFeeding_eventsDfJoin['meat_per_minute'] = trex_profilesDfFeeding_eventsDfJoin['meat_kg'] / trex_profilesDfFeeding_eventsDfJoin['hunt_duration_minutes'] ",
+            "Existing": "trex_profilesDfFeeding_eventsDfJoin['meat_per_minute'] = trex_profilesDfFeeding_eventsDfJoin['meat_kg'] / trex_profilesDfFeeding_eventsDfJoin['hunt_duration_minutes'] "
+        }
+    ],
+    "013905554360226513": [
+        {
+            "PreviouslyGenerated": "#***DataframePivot: Pivoting a dataframe / table results in a new dataframe displaying various numerical summarizations for a specified column grouped by categories / values in one or more other columns. A pivoted table along a single column would result in a table without columns, just rows. And, a pivoted table along two or more columns would have rows and columns. The summarized metrics can be either sum, mean, median, min, max, count, standard deviation, variance, first, and last.\n#***\n#***What would you like to do?\n#***- Pivot the dataframe such that the result has NO columns.\n#***---- This will combine a column of data into cells\n#***---- according to the categories of another column. #> `select ? --rows ?\n#***\n#***- Pivot the dataframe such that the result has columns.\n#***---- This will combine data across more dimensions. #> `select ? --rows ? --columns ?",
+            "Existing": "#***DataframePivot: Pivoting a dataframe / table results in a new dataframe displaying various numerical summarizations for a specified column grouped by categories / values in one or more other columns. A pivoted table along a single column would result in a table without columns, just rows. And, a pivoted table along two or more columns would have rows and columns. The summarized metrics can be either sum, mean, median, min, max, count, standard deviation, variance, first, and last.\n#***\n#***What would you like to do?\n#***- Pivot the dataframe such that the result has NO columns.\n#***---- This will combine a column of data into cells\n#***---- according to the categories of another column. #> `select ? --rows ?\n#***\n#***- Pivot the dataframe such that the result has columns.\n#***---- This will combine data across more dimensions. #> `select ? --rows ? --columns ?"
+        },
+        {
+            "PreviouslyGenerated": "#***What aggregation function would you like to use? If none supplied, sum will be used.\n#***- Sum #> `select --cells ? --sum\n#***- Mean #> `select --cells ? --mean\n#***- Median #> `select --cells ? --median\n#***- Min #> `select --cells ? --min\n#***- Max #> `select --cells ? --max\n#***- Count #> `select --count\n#***- Standard Deviation #> `select --cells ? --std\n#***- Variance #> `select --cells ? --var\n#***- First #> `select --cells ? --first\n#***- Last #> `select --cells ? --last\n#***- Done #> `select\n#***\n#****** --rows ? ***\n#***Rows is required.\n#***The rows will be taken from one or more existing columns in the dataframe. You may provide one or more column names.\n#***- Example: --rows Speed Acceleration ",
+            "Existing": "#***What aggregation function would you like to use? If none supplied, sum will be used.\n#***- Sum #> `select --cells ? --sum\n#***- Mean #> `select --cells ? --mean\n#***- Median #> `select --cells ? --median\n#***- Min #> `select --cells ? --min\n#***- Max #> `select --cells ? --max\n#***- Count #> `select --count\n#***- Standard Deviation #> `select --cells ? --std\n#***- Variance #> `select --cells ? --var\n#***- First #> `select --cells ? --first\n#***- Last #> `select --cells ? --last\n#***- Done #> `select\n#***\n#****** --rows ? ***\n#***Rows is required.\n#***The rows will be taken from one or more existing columns in the dataframe. You may provide one or more column names.\n#***- Example: --rows Speed Acceleration "
+        },
+        {
+            "PreviouslyGenerated": "#****** --rows ? ***\n#***Rows is required.\n#***The rows will be taken from one or more existing columns in the dataframe. You may provide one or more column names.\n#***- Example: --rows Speed Acceleration\n#***\n#****** --cells ? ***\n#***Cells is required.\n#***The cells will be the data that is summarized / calculated within the new dataframe. You can only provide 1 column name.\n#***- Example: --cells Distance ",
+            "Existing": "#****** --rows ? ***\n#***Rows is required.\n#***The rows will be taken from one or more existing columns in the dataframe. You may provide one or more column names.\n#***- Example: --rows Speed Acceleration\n#***\n#****** --cells ? ***\n#***Cells is required.\n#***The cells will be the data that is summarized / calculated within the new dataframe. You can only provide 1 column name.\n#***- Example: --cells Distance "
+        },
+        {
+            "PreviouslyGenerated": "trex_profilesDfFeeding_eventsDfJoinPivot = trex_profilesDfFeeding_eventsDfJoin.pivot_table(index='territory', values='meat_per_minute', aggfunc='mean')\ntrex_profilesDfFeeding_eventsDfJoinPivot = trex_profilesDfFeeding_eventsDfJoinPivot.reset_index(drop=False) ",
+            "Existing": "trex_profilesDfFeeding_eventsDfJoinPivot = trex_profilesDfFeeding_eventsDfJoin.pivot_table(index='territory', values='meat_per_minute', aggfunc='mean')\ntrex_profilesDfFeeding_eventsDfJoinPivot = trex_profilesDfFeeding_eventsDfJoinPivot.reset_index(drop=False) "
+        }
+    ]
+}

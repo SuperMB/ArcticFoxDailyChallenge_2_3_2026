@@ -1,0 +1,255 @@
+{
+    "variables": {
+        "trex_profilesDf": {
+            "columns": [
+                {
+                    "Name": "name",
+                    "ColumnType": 0
+                },
+                {
+                    "Name": "age_years",
+                    "ColumnType": 1
+                },
+                {
+                    "Name": "territory",
+                    "ColumnType": 0
+                },
+                {
+                    "Name": "weight_kg",
+                    "ColumnType": 1
+                }
+            ],
+            "hasHeaders": false,
+            "type": "pandas.core.frame.DataFrame"
+        },
+        "trex_profilesDfRowCount": {
+            "type": "int"
+        },
+        "trex_profilesDfUnique": {
+            "type": "numpy.ndarray"
+        },
+        "feeding_eventsDf": {
+            "columns": [
+                {
+                    "Name": "name",
+                    "ColumnType": 0
+                },
+                {
+                    "Name": "prey_type",
+                    "ColumnType": 0
+                },
+                {
+                    "Name": "meat_kg",
+                    "ColumnType": 1
+                },
+                {
+                    "Name": "hunt_duration_minutes",
+                    "ColumnType": 2
+                },
+                {
+                    "Name": "success",
+                    "ColumnType": 3
+                },
+                {
+                    "Name": "event_date",
+                    "ColumnType": 6
+                }
+            ],
+            "hasHeaders": false,
+            "type": "pandas.core.frame.DataFrame"
+        },
+        "self": {
+            "type": "pandas.core.indexes.base.Index"
+        },
+        "labels": {
+            "type": "numpy.ndarray"
+        },
+        "errors": {
+            "type": "str"
+        },
+        "arr_dtype": {
+            "type": "str"
+        },
+        "indexer": {
+            "type": "numpy.ndarray"
+        },
+        "mask": {
+            "type": "numpy.ndarray"
+        },
+        "annotations": {
+            "type": "__future__._Feature"
+        },
+        "TYPE_CHECKING": {
+            "type": "bool"
+        },
+        "Callable": {
+            "type": "typing._CallableType"
+        },
+        "ClassVar": {
+            "type": "typing._SpecialForm"
+        },
+        "Literal": {
+            "type": "typing._TypedCacheSpecialForm"
+        },
+        "NoReturn": {
+            "type": "typing._SpecialForm"
+        },
+        "get_option": {
+            "type": "pandas._config.config.CallableDynamicDoc"
+        },
+        "NaT": {
+            "type": "pandas._libs.tslibs.nattype.NaTType"
+        },
+        "is_datetime_array": {
+            "type": "_cython_3_1_4.cython_function_or_method"
+        },
+        "no_default": {
+            "type": "<enum '_NoDefault'>"
+        },
+        "tz_compare": {
+            "type": "_cython_3_1_4.cython_function_or_method"
+        },
+        "AnyAll": {
+            "type": "typing._LiteralGenericAlias"
+        },
+        "ArrayLike": {
+            "type": "typing.Union"
+        },
+        "Axes": {
+            "type": "typing.Union"
+        },
+        "Axis": {
+            "type": "typing.Union"
+        },
+        "DropKeep": {
+            "type": "typing._LiteralGenericAlias"
+        },
+        "DtypeObj": {
+            "type": "typing.Union"
+        },
+        "F": {
+            "type": "typing.TypeVar"
+        },
+        "IgnoreRaise": {
+            "type": "typing._LiteralGenericAlias"
+        },
+        "IndexLabel": {
+            "type": "typing.Union"
+        },
+        "JoinHow": {
+            "type": "typing._LiteralGenericAlias"
+        },
+        "NaPosition": {
+            "type": "typing._LiteralGenericAlias"
+        },
+        "ReindexMethod": {
+            "type": "typing.Union"
+        },
+        "Self": {
+            "type": "NoneType"
+        },
+        "Shape": {
+            "type": "types.GenericAlias"
+        },
+        "npt": {
+            "type": "NoneType"
+        },
+        "ensure_int64": {
+            "type": "_cython_3_1_4.cython_function_or_method"
+        },
+        "ensure_object": {
+            "type": "_cython_3_1_4.cython_function_or_method"
+        },
+        "ensure_platform_int": {
+            "type": "_cython_3_1_4.cython_function_or_method"
+        },
+        "is_float": {
+            "type": "_cython_3_1_4.cython_function_or_method"
+        },
+        "is_integer": {
+            "type": "_cython_3_1_4.cython_function_or_method"
+        },
+        "is_iterator": {
+            "type": "_cython_3_1_4.cython_function_or_method"
+        },
+        "is_list_like": {
+            "type": "_cython_3_1_4.cython_function_or_method"
+        },
+        "is_scalar": {
+            "type": "_cython_3_1_4.cython_function_or_method"
+        },
+        "_unsortable_types": {
+            "type": "frozenset"
+        },
+        "_index_doc_kwargs": {
+            "type": "dict"
+        },
+        "_index_shared_docs": {
+            "type": "dict"
+        },
+        "_dtype_obj": {
+            "type": "numpy.dtypes.ObjectDType"
+        },
+        "_masked_engines": {
+            "type": "dict"
+        },
+        "trex_profilesDfFeeding_eventsDfJoin": {
+            "type": "pandas.core.frame.DataFrame",
+            "columns": [
+                {
+                    "Name": "name",
+                    "ColumnType": 0
+                },
+                {
+                    "Name": "age_years",
+                    "ColumnType": 1
+                },
+                {
+                    "Name": "territory",
+                    "ColumnType": 0
+                },
+                {
+                    "Name": "weight_kg",
+                    "ColumnType": 1
+                },
+                {
+                    "Name": "prey_type",
+                    "ColumnType": 0
+                },
+                {
+                    "Name": "meat_kg",
+                    "ColumnType": 1
+                },
+                {
+                    "Name": "hunt_duration_minutes",
+                    "ColumnType": 2
+                },
+                {
+                    "Name": "success",
+                    "ColumnType": 3
+                },
+                {
+                    "Name": "event_date",
+                    "ColumnType": 6
+                },
+                {
+                    "Name": "meat_per_minute",
+                    "ColumnType": 2
+                }
+            ]
+        },
+        "trex_profilesDfFeeding_eventsDfJoinPivot": {
+            "type": "pandas.core.frame.DataFrame",
+            "columns": [
+                {
+                    "Name": "territory",
+                    "ColumnType": 0
+                },
+                {
+                    "Name": "meat_per_minute",
+                    "ColumnType": 2
+                }
+            ]
+        }
+    }
+}
